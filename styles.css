@@ -346,6 +346,7 @@ hr {
     right:0;
     bottom:0;
     z-index:500;
+    max-width:411px;
 }
 
 .bottom-bar-wrapper img {
