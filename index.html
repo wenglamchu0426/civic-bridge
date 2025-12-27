@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Civic Bridge Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section class="chatroom">
+        <div class="title">
+            <h3>Civic Helper</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+            </svg>
+        </div>
+        <hr>
+        <div class="chat-record">
+            <div class="date">
+                <p>Today, Sept 10</p>
+            </div>
+            <div class="conversation">
+                <div class="bot-side">
+                    <div class="with-icon">
+                        <img src="images/live-chat.png">
+                        <div class="bot-bubble">
+                            <p>Hi, I'm your Civic Helper! Ask me about bills, elected officials, or guides.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-side">
+                    <div class="suggested-entries">
+                        <div class="user-bubble suggested-btn">
+                            <p>Explain H.R. 1 in simple language.</p>
+                        </div>
+                        <div class="user-bubble">
+                            <p>What's the status of H.R.1?</p>
+                        </div>
+                        <div class="user-bubble">
+                            <p>Who are my elected officials?</p>
+                        </div>
+                        <div class="user-bubble">
+                            <p>How do I register to vote?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="entry-bar">
+                <input type="text" placeholder="Enter Your Message...">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                    <path d="M480-400q-50 0-85-35t-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35Zm0-240Zm-40 520v-123q-104-14-172-93t-68-184h80q0 83 58.5 141.5T480-320q83 0 141.5-58.5T680-520h80q0 105-68 184t-172 93v123h-80Zm40-360q17 0 28.5-11.5T520-520v-240q0-17-11.5-28.5T480-800q-17 0-28.5 11.5T440-760v240q0 17 11.5 28.5T480-480Z"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <div class="background">
+    </div>
+    <section class="top-bar">
+        <button id="language"><img src="images/Language.png"></button>
+        <div id="logo"><img src="images/Logo.png"></div>
+        <button id="helper"><img src="images/Helper.png"></button>
+    </section>
+    <section class="bottom-bar">
+        <div class="bottom-bar-wrapper">
+            <img src="images/State=Default.png">
+        </div>
+    </section>
+    <section>
+        <h1 class="slogan">Understand Bills. Take Action.</h1>
+    </section>
+    <section class="hero">
+        <div class="img-wrapper">
+            <img src="images/cb-photo.jpeg">
+        </div>
+    </section>
+    <section>
+        <h2 class="section-title">Find Legislation</h2>
+        <p class="description">Search by bill number or keyword. Try: Immigration, Student Loans, Rent Control, Workers' Rights</p>
+        <div class="search-bar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+            </svg>
+            <input type="text" placeholder="Enter Keyword">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                <path d="M480-400q-50 0-85-35t-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35Zm0-240Zm-40 520v-123q-104-14-172-93t-68-184h80q0 83 58.5 141.5T480-320q83 0 141.5-58.5T680-520h80q0 105-68 184t-172 93v123h-80Zm40-360q17 0 28.5-11.5T520-520v-240q0-17-11.5-28.5T480-800q-17 0-28.5 11.5T440-760v240q0 17 11.5 28.5T480-480Z"/>
+            </svg>
+        </div>
+    </section>
+    <section>
+        <h2 class="section-title">Most Relevant</h2>
+        <div class="pills-wrapper">
+            <button class="pill white selected" data-category="all">All</button>
+            <button class="pill green" data-category="economy">Economy</button>
+            <button class="pill green" data-category="government">Government</button>
+            <button class="pill blue" data-category="immigration">Immigration</button>
+            <button class="pill blue" data-category="international">International</button>
+            <button class="pill red" data-category="education">Education</button>
+            <button class="pill red" data-category="health">Health</button>
+            <button class="pill red" data-category="family">Family</button>
+        </div>
+        <div class="no-result">
+            <div class="no-result-image-wrapper">
+                <img src="images/No-Result.png">
+            </div>
+        </div>
+        <div class="cards-wrapper">
+            <div class="hr1 card" data-categories="economy health">
+                <div class="card-img-wrapper">
+                    <img src="images/Property 1=1.png">
+                </div>
+                <div class="card-text-container">
+                    <div class="card-pills-wrapper">
+                        <div class="pill green">Economy</div>
+                        <div class="pill red">Health</div>
+                    </div>
+                    <h3>H.R.1 One Big Beautiful Bill</h3>
+                    <button>
+                        View Bill
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                            <path d="m600-200-57-56 184-184H80v-80h647L543-704l57-56 280 280-280 280Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card" data-categories="economy">
+                <div class="card-img-wrapper">
+                    <img src="images/Property 1=2.png">
+                </div>
+                <div class="card-text-container">
+                    <div class="card-pills-wrapper">
+                        <div class="pill green">Economy</div>
+                    </div>
+                    <h3>S.394 Genius</h3>
+                    <button>View Bill
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                            <path d="m600-200-57-56 184-184H80v-80h647L543-704l57-56 280 280-280 280Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card" data-categories="economy">
+                <div class="card-img-wrapper">
+                    <img src="images/Property 1=3.png">
+                </div>
+                <div class="card-text-container">
+                    <div class="card-pills-wrapper">
+                        <div class="pill green">Economy</div>
+                    </div>
+                    <h3>H.R.3633 Digital Market Clarity</h3>
+                    <button>View Bill
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                            <path d="m600-200-57-56 184-184H80v-80h647L543-704l57-56 280 280-280 280Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card" data-categories="international">
+                <div class="card-img-wrapper">
+                    <img src="images/Property 1=4.png">
+                </div>
+                <div class="card-text-container">
+                    <div class="card-pills-wrapper">
+                        <div class="pill blue">International</div>
+                    </div>
+                    <h3>H.R.2548 Sanctioning Russia</h3>
+                    <button>View Bill
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                            <path d="m600-200-57-56 184-184H80v-80h647L543-704l57-56 280 280-280 280Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card" data-categories="other">
+                <div class="card-img-wrapper">
+                    <img src="images/Property 1=5.png">
+                </div>
+                <div class="card-text-container">
+                    <div class="card-pills-wrapper">
+                        <div class="pill grey">Other</div>
+                    </div>
+                    <h3>H.R.4016 Department of Defense...</h3>
+                    <button>View Bill
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                            <path d="m600-200-57-56 184-184H80v-80h647L543-704l57-56 280 280-280 280Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card" data-categories="health">
+                <div class="card-img-wrapper">
+                    <img src="images/Property 1=6.png">
+                </div>
+                <div class="card-text-container">
+                    <div class="card-pills-wrapper">
+                        <div class="pill red">Health</div>
+                    </div>
+                    <h3>H.R.27 HALT Fentanyl</h3>
+                    <button>View Bill
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                            <path d="m600-200-57-56 184-184H80v-80h647L543-704l57-56 280 280-280 280Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card" data-categories="economy">
+                <div class="card-img-wrapper">
+                    <img src="images/Property 1=7.png">
+                </div>
+                <div class="card-text-container">
+                    <div class="card-pills-wrapper">
+                        <div class="pill green">Economy</div>
+                    </div>
+                    <h3>S.1046 No Tax on Overtime</h3>
+                    <button>View Bill
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                            <path d="m600-200-57-56 184-184H80v-80h647L543-704l57-56 280 280-280 280Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card" data-categories="economy">
+                <div class="card-img-wrapper">
+                    <img src="images/Property 1=8.png">
+                </div>
+                <div class="card-text-container">
+                    <div class="card-pills-wrapper">
+                        <div class="pill green">Economy</div>
+                    </div>
+                    <h3>S.129 No Tax on Tips</h3>
+                    <button>View Bill
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                            <path d="m600-200-57-56 184-184H80v-80h647L543-704l57-56 280 280-280 280Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card" data-categories="government">
+                <div class="card-img-wrapper">
+                    <img src="images/Property 1=9.png">
+                </div>
+                <div class="card-text-container">
+                    <div class="card-pills-wrapper">
+                        <div class="pill green">Government</div>
+                    </div>
+                    <h3>H.Res.492 Directing the Clerk of...</h3>
+                    <button>View Bill
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                            <path d="m600-200-57-56 184-184H80v-80h647L543-704l57-56 280 280-280 280Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card" data-categories="family">
+                <div class="card-img-wrapper">
+                    <img src="images/Property 1=10.png">
+                </div>
+                <div class="card-text-container">
+                    <div class="card-pills-wrapper">
+                        <div class="pill red">Health</div>
+                    </div>
+                    <h3>H.R.1332 Make Marriage...</h3>
+                    <button>View Bill
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                            <path d="m600-200-57-56 184-184H80v-80h647L543-704l57-56 280 280-280 280Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card" data-categories="government">
+                <div class="card-img-wrapper">
+                    <img src="images/Property 1=11.png">
+                </div>
+                <div class="card-text-container">
+                    <div class="card-pills-wrapper">
+                        <div class="pill green">Government</div>
+                    </div>
+                    <h3>H.Res.353 Impeaching Donald John...</h3>
+                    <button>View Bill
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                            <path d="m600-200-57-56 184-184H80v-80h647L543-704l57-56 280 280-280 280Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card" data-categories="immigration">
+                <div class="card-img-wrapper">
+                    <img src="images/Property 1=2.png">
+                </div>
+                <div class="card-text-container">
+                    <div class="card-pills-wrapper">
+                        <div class="pill blue">Immigration</div>
+                    </div>
+                    <h3>H.R.875 Jeremy and Angel Seay...</h3>
+                    <button>View Bill
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+                            <path d="m600-200-57-56 184-184H80v-80h647L543-704l57-56 280 280-280 280Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
