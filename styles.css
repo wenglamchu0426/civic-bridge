@@ -30,13 +30,13 @@
     margin:0px;
 }
 
-.app-shell {
+/*.app-shell {
   max-width: 411px;   
   transform: translateX(-50%);
   margin: 0 auto;
   min-height: 100vh;
   background: white;
-}
+}*/
 
 body {
     font-family:var(--font-family);
